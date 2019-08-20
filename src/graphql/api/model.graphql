@@ -1,0 +1,11 @@
+
+#Model
+type User {
+  accountId: String
+  createdAt: String
+}
+
+type SignUpUser {
+  user: User,
+  token: String
+}
