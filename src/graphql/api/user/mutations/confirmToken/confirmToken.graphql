@@ -1,0 +1,3 @@
+type Mutation {
+  confirmToken(token: String!): AuthResponse
+}

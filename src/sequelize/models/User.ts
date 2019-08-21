@@ -4,17 +4,21 @@ const Sequelize = require('sequelize');
 
 const User = connector.define('user', {
     id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
     },
     accountId:{
-        type: Sequelize.STRING,
-        allowNull: false
+      type: Sequelize.STRING,
+      allowNull: false
     },
     password: {
-        type: Sequelize.STRING,
-        allowNull: false
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    isDelete: {
+      type: Sequelize.BOOLEAN,
+      allowNull: false
     },
     ...metaFields
 },{

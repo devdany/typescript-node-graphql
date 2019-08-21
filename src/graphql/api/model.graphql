@@ -3,9 +3,10 @@
 type User {
   accountId: String
   createdAt: String
+  updatedAt: String
 }
 
-type SignUpUser {
+type AuthResponse {
   user: User,
   token: String
 }

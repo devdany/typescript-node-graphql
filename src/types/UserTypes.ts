@@ -1,6 +1,15 @@
 type SignUpUser = {
-  accountId: String
-  password: String
+  accountId: string
+  password: string
 }
 
-export {SignUpUser}
+type SignInUser = {
+  accountId: string
+  password: string
+}
+
+type TokenArg = {
+  token: string
+}
+
+export {SignUpUser, SignInUser, TokenArg}

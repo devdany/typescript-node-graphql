@@ -1,3 +1,3 @@
 type Mutation {
-  signUp(accountId: String!, password: String!): SignUpUser
+  signUp(accountId: String!, password: String!): AuthResponse
 }
